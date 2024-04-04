@@ -20,12 +20,12 @@ echo -e " \033[32;2m                                                           \
 # YOU SHOULD ONLY NEED TO EDIT THIS SECTION #
 #############################################
 # Set the IP addresses of master1
-master1=192.168.3.21
+master1=192.168.86.161
 
 # Set the IP addresses of your Longhorn nodes
-longhorn1=192.168.3.26
-longhorn2=192.168.3.27
-longhorn3=192.168.3.28
+longhorn1=192.168.86.167
+longhorn2=192.168.86.168
+longhorn3=192.168.86.169
 
 # User of remote machines
 user=ubuntu
@@ -34,7 +34,7 @@ user=ubuntu
 interface=eth0
 
 # Set the virtual IP address (VIP)
-vip=192.168.3.50
+vip=192.168.86.170
 
 # Array of longhorn nodes
 storage=($longhorn1 $longhorn2 $longhorn3)
