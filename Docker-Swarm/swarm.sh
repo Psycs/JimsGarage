@@ -21,16 +21,18 @@ echo -e " \033[32;5m                                                           \
 #############################################
 
 # Set the IP addresses of the admin, managers, and workers nodes
-admin=192.168.3.5
-manager1=192.168.3.21
-manager2=192.168.3.22
-manager3=192.168.3.23
-worker1=192.168.3.24
-worker2=192.168.3.25
+admin=192.168.86.130
+manager1=192.168.86.131
+manager2=192.168.86.132
+manager3=192.168.86.133
+worker1=192.168.86.134
+worker2=192.168.86.135
+worker3=192.168.86.136
 
 # Set the workers' hostnames (if using cloud-init in Proxmox it's the name of the VM)
-workerHostname1=dockerSwarm-04
-workerHostname2=dockerSwarm-05
+workerHostname1=DockerSwarm-Worker1
+workerHostname2=DockerSwarm-Worker2
+workerHostname3=DockerSwarm-Worker3
 
 # User of remote machines
 user=ubuntu
@@ -45,10 +47,10 @@ allmanagers=($manager1 $manager2 $manager3)
 managers=($manager2 $manager3)
 
 # Array of worker nodes
-workers=($worker1 $worker2)
+workers=($worker1 $worker2 $worker3)
 
 # Array of all
-all=($manager1 $manager2 $manager3 $worker1 $worker2)
+all=($manager1 $manager2 $manager3 $worker1 $worker2 $worker3)
 
 #ssh certificate name variable
 certName=id_rsa
